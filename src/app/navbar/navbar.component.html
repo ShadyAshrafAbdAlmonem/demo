@@ -1,0 +1,29 @@
+<head>
+  <!-- Add this line to include the Remix Icon library -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="navbar-left">
+      <a class="navbar-brand" href="#">Portfolio</a>
+    </div>
+    <div class="navbar-right">
+      <a class="nav-link" routerLink="/" routerLinkActive="active">Home</a>
+      <a class="nav-link" routerLink="/about" routerLinkActive="active">About</a>
+      <a class="nav-link" routerLink="/skills" routerLinkActive="active">Skills</a>
+      <a class="nav-link" routerLink="/project" routerLinkActive="active">Projects</a>
+    </div>
+    <!-- Menu icon for mobile -->
+    <i class="ri-align-justify menu-icon" (click)="toggleSidebar()"></i>
+  </nav>
+
+  <!-- Sidebar -->
+  <div class="sidebar" [class.show]="isSidebarOpen">
+    <i class="ri-close-line close-icon" (click)="toggleSidebar()"></i>
+    <a class="nav-link" routerLink="/" routerLinkActive="active" (click)="toggleSidebar()">Home</a>
+    <a class="nav-link" routerLink="/about" routerLinkActive="active" (click)="toggleSidebar()">About</a>
+    <a class="nav-link" routerLink="/skills" routerLinkActive="active" (click)="toggleSidebar()">Skills</a>
+    <a class="nav-link" routerLink="/project" routerLinkActive="active" (click)="toggleSidebar()">Projects</a>
+  </div>
+</body>

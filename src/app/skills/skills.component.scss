@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+/* Styles for canvas elements (charts) */
+canvas {
+  width: 100% !important; /* Make the canvas responsive */
+  height: auto !important; /* Auto height to maintain aspect ratio */
+  max-height: 300px; /* Increased max height for charts */
+}
+
+/* Container for each chart */
+.chart {
+  flex-direction: column;
+  text-align: center;
+  display: flex;
+  height: auto;
+  margin: 10px;
+  color: white;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Main container for the charts */
+.control-charts {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 80%; /* More flexible width for desktop */
+  margin: auto;
+  justify-content: space-around;
+}
+
+/* Main container for the skills section */
+.skills-container {
+  width: 100%;
+  margin: auto;
+  overflow-y: auto; /* Enable vertical scrolling */
+  max-height: 100vh; /* Ensure the height doesn't exceed the viewport */
+}
+
+/* Styles for the text and headings */
+.illustrate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-family: "PT Serif", serif;
+  margin-bottom: 50px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 5px;
+}
+
+p {
+  font-size: 1.2rem;
+  color: white;
+}
+
+/* Responsive styles for mobile screens */
+@media (max-width: 717px) and (min-width: 200px) {
+  @media (max-width: 717px) and (min-width: 200px) {
+    .skills-container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin: auto;
+      overflow-y: auto; /* Enable vertical scrolling */
+      overflow-x: hidden; /* Prevent horizontal scrolling */
+      max-height: 100vh; /* Set the height to the viewport size */
+      padding: 0 10px; /* Padding for mobile view */
+    }
+  
+    .control-charts {
+      flex-direction: column;
+      max-width: 100%; /* Make sure charts take full width on mobile */
+      margin: auto;
+      padding: 0;
+    }
+  
+    .illustrate {
+      margin-bottom: 30px;
+    }
+  
+    h1 {
+      font-size: 2rem; /* Reduce font size for mobile */
+    }
+  
+    p {
+      font-size: 1rem; /* Adjust paragraph font size */
+    }
+  
+    canvas {
+      width: 100% !important; /* Full width on mobile */
+      height: auto !important; /* Keep aspect ratio */
+      max-height: 250px; /* Increased height on mobile */
+      margin: auto;
+    }
+  
+    .chart {
+      margin: 5px 0; /* Adjust margins for mobile */
+    }
+}
+}

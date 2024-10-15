@@ -1,0 +1,77 @@
+<div class="projects-container">
+    <div class="header">
+        <h1>My Projects</h1>
+        <p>Explore some of my recent projects by clicking on the cards below.</p>
+    </div>
+
+    <div class="project-cards">
+        <div class="project-card" 
+             [ngClass]="{'active-card': activeIndex === 0}" 
+             (click)="setActiveIndex(0)">
+             <i class="ri-community-line"></i>
+            <h3>Eskan Misr</h3>
+            <p>Click to know details</p>
+        </div>
+
+        <div class="project-card" 
+             [ngClass]="{'active-card': activeIndex === 1}" 
+             (click)="setActiveIndex(1)">
+             <i class="ri-building-2-line"></i>
+            <h3>Solace Company</h3>
+            <p>Click to know details</p>
+        </div>
+
+        <div class="project-card" 
+             [ngClass]="{'active-card': activeIndex === 2}" 
+             (click)="setActiveIndex(2)">
+             <i class="ri-git-repository-line"></i>
+            <h3>Book App</h3>
+            <p>Click to know details</p>
+        </div>
+
+        <div class="project-card" 
+             [ngClass]="{'active-card': activeIndex === 3}" 
+             (click)="setActiveIndex(3)">
+             <i class="ri-restaurant-line"></i>
+            <h3>Restaurant App</h3>
+            <p>Click to know details</p>
+        </div>
+    </div>
+
+    <div class="project-details" *ngIf="activeIndex !== null">
+        <div *ngIf="activeIndex === 0">
+            <p>• Building a real estates project using Angular 18 SSR.
+                • Integration between back-end services(Nest.js) and front-end
+                application (Angular HTTP Client).
+                • Making the application responsive to serve mobile users using the app
+                from the web as well.
+                • Modular app as it consists of many distinct roles and privileges (AdminReviewer-Consultant-Buyer/Seller user).
+                • Managing translation from English to Arabic and vice versa.</p>
+        </div>
+
+        <div *ngIf="activeIndex === 1">
+            <p>• Creating an HR application on an enterprise level from scratch that
+                serves dozens of well-known corporates in Angular 17.
+                • Integration between back-end services and front-end applications in
+                RESTful APIs.
+                • Building A Mono-repo for a series of VIP applications and special
+                services to share UI and services among all the applications using NX
+                mono-repo..</p>
+        </div>
+
+        <div *ngIf="activeIndex === 2">
+            <p>• Building a real estate project using React 15
+                • It has features such as reading or listening to it.
+                • It is possible to send a report if it contains violence, abuse or sex.
+                • It can be saved for later reading or buying.
+            </p>
+        </div>
+
+        <div *ngIf="activeIndex === 3">
+            <p>• Building a real estates project using React 19
+                • Making the application responsive to serve mobile users using the app
+                from the web as well.
+                • You can make a request for what you want, what number, what day and what time</p>
+        </div>
+    </div>
+</div>

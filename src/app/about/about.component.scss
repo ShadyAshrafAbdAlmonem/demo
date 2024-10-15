@@ -1,0 +1,79 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+  height: 100vh;
+  overflow-y: auto; /* Allow vertical scrolling for the whole page */
+}
+
+
+
+.typing-effect {
+  padding: 10px;
+  font-size: 20px;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  white-space: pre-wrap;
+  animation: blink-cursor 0.75s step-end infinite;
+}
+
+@keyframes blink-cursor {
+  from { border-right-color: black; }
+  to { border-right-color: transparent; }
+}
+
+.fade-in {
+  color: white;
+  display: flex;
+  opacity: 0;
+  animation: fadeInOpacity 10s ease-in forwards;
+  animation-delay: 15s;
+}
+
+@keyframes fadeInOpacity {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* Media Query for screen width from 367px to 717px */
+@media (max-width: 717px) and (min-width: 367px) {
+  .page {
+    padding: 10px;
+    height: auto; /* Adjust height */
+    overflow-y: auto; /* Enable vertical scrolling */
+  }
+
+  .scrollable-container {
+    width: 100%;
+    max-height: 600px; /* Adjust max height for devices in this range */
+    overflow-y: scroll; /* Allow vertical scrolling */
+  }
+
+  .typing-effect {
+    font-size: 14px; /* Smaller font for smaller screens */
+    overflow-y: auto;
+  }
+
+  p {
+    font-size: 16px;
+    text-align: center;
+  }
+}
+
+/* Media Query for screen width less than 367px */
+@media (max-width: 366px) {
+  .scrollable-container {
+    max-height: 120px; /* Set a lower max height for very small screens */
+    overflow-y: scroll;
+  }
+
+  .typing-effect {
+    font-size: 12px; /* Even smaller font for smaller devices */
+  }
+
+  p {
+    font-size: 16px;
+  }
+}

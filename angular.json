@@ -37,6 +37,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/remixicon/fonts/remixicon.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -46,13 +47,18 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "600kb",  
+                  "maximumError": "800kb"     
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumWarning": "150kb",   
+                  "maximumError": "200kb"
+                },
+                {
+                  "type": "all",
+                  "maximumWarning": "1mb",    
+                  "maximumError": "1.5mb"
                 }
               ],
               "outputHashing": "all"
