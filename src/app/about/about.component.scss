@@ -37,7 +37,7 @@
   100% { opacity: 1; }
 }
 
-@media (max-width: 717px) and (min-width: 367px) {
+@media (max-width: 717px) and (min-width: 200px) {
   .page {
     padding: 10px;
     height: auto; 
@@ -52,7 +52,7 @@
 
   .typing-effect {
     font-size: 14px; 
-    overflow-y: auto;
+    overflow-x: scroll;
   }
 
   p {
@@ -63,7 +63,7 @@
 
 @media (max-width: 366px) {
   .scrollable-container {
-    max-height: 120px; 
+    max-height: 545px; 
     overflow-y: scroll;
   }
 
@@ -75,3 +75,52 @@
     font-size: 16px;
   }
 }
+
+@media (max-height: 717px) and (min-height: 200px) {
+  .page {
+    height: 100vh;
+    overflow-y: auto; /* Enable vertical scrolling */
+  }
+
+  .scrollable-container {
+    max-height: 100%; /* Ensure it adapts to the page height */
+    overflow-y: auto; /* Allow scrolling within the container */
+  }
+
+  .typing-effect {
+    font-size: 14px;
+    overflow-x: scroll;
+  }
+}
+
+@media (max-width: 375px) and (max-height: 667px) {
+  .page {
+    padding: 10px;
+    height: 100vh; /* Full height of the viewport */
+    overflow-y: auto; /* Scroll the page vertically if content overflows */
+  }
+
+  .scrollable-container {
+    width: 100%;
+    max-height: 100%; /* Set to fill available height */
+    overflow-y: scroll; /* Enable scrolling within the container */
+  }
+
+  .typing-effect {
+    font-size: 11px;
+    white-space: normal; /* Allow text to wrap */
+    overflow-x: auto; /* Enable horizontal scroll if needed */
+  }
+
+  p {
+    font-size: 14px; /* Reduce text size */
+    text-align: center; /* Center-align text */
+  }
+
+  i {
+    font-size: 20px; /* Adjust icon size for better fit */
+  }
+
+
+}
+
