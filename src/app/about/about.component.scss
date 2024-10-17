@@ -37,6 +37,20 @@
   100% { opacity: 1; }
 }
 
+.separator {
+  margin: 20px 0; /* Add space above and below the line */
+  border: 0;
+  border-top: 1px solid white; /* The line's color */
+  width: 100%;
+}
+
+@media (max-width: 375px) and (max-height: 667px) {
+  .separator {
+    margin: 15px 0; /* Adjust spacing for smaller phone sizes */
+    border-top-width: 2px; /* Make the line thicker if needed */
+  }
+}
+
 @media (max-width: 717px) and (min-width: 200px) {
   .page {
     padding: 10px;
@@ -47,7 +61,7 @@
   .scrollable-container {
     width: 100%;
     max-height: 600px;
-    overflow-y: hidden; 
+    overflow-x: hidden; 
   }
 
   .typing-effect {
