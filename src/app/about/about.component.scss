@@ -47,7 +47,7 @@
   .scrollable-container {
     width: 100%;
     max-height: 600px;
-    overflow-y: scroll; 
+    overflow-y: hidden; 
   }
 
   .typing-effect {
@@ -64,7 +64,7 @@
 @media (max-width: 366px) {
   .scrollable-container {
     max-height: 545px; 
-    overflow-y: scroll;
+    overflow-y: hidden;
   }
 
   .typing-effect {
@@ -97,13 +97,13 @@
   .page {
     padding: 10px;
     height: 100vh; /* Full height of the viewport */
-    overflow-y: auto; /* Scroll the page vertically if content overflows */
+    overflow-y: hidden; /* Scroll the page vertically if content overflows */
   }
 
   .scrollable-container {
     width: 100%;
     max-height: 100%; /* Set to fill available height */
-    overflow-y: scroll; /* Enable scrolling within the container */
+    overflow-y: hidden; /* Enable scrolling within the container */
   }
 
   .typing-effect {
