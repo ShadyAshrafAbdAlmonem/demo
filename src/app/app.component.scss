@@ -11,11 +11,11 @@
 }
 
 :host {
-    display: block; /* Make the host element a block element */
-    height: 100vh; /* Full height of the viewport */
+    display: block; 
+    height: 100vh;
     background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 15%, rgba(0,0,0,1) 26%, rgba(0,0,0,1) 36%, rgba(0,0,0,1) 41%, rgba(1,12,120,1) 77%, rgba(1,13,126,1) 84%, rgba(1,18,161,1) 90%, rgba(0,31,255,1) 100%);
-    background-size: 600% 600%; /* Adjust size for smoother transition */
-    animation: gradientAnimation 10s ease infinite; /* Animation properties */
+    background-size: 600% 600%;
+    animation: gradientAnimation 10s ease infinite; 
 }
 
 
@@ -28,11 +28,11 @@
 
 @media (max-width: 717px) and (min-width: 200px) {
     :host {
-        display: block; /* Make the host element a block element */
-        height: 160vh; /* Full height of the viewport */
+        display: block;
+        height: 160vh; 
         background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 15%, rgba(0,0,0,1) 26%, rgba(0,0,0,1) 36%, rgba(0,0,0,1) 41%, rgba(1,12,120,1) 77%, rgba(1,13,126,1) 84%, rgba(1,18,161,1) 90%, rgba(0,31,255,1) 100%);
-        background-size: 600% 600%; /* Adjust size for smoother transition */
-        animation: gradientAnimation 10s ease infinite; /* Animation properties */
+        background-size: 600% 600%; 
+        animation: gradientAnimation 10s ease infinite; 
     }
 }
 

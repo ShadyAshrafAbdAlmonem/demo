@@ -124,12 +124,45 @@ export class SkillsComponent implements OnInit {
       this.chart = new Chart(appCanvas, {
         type: 'doughnut',
         data: {
-          labels: ['FrontEnd', 'BackEnd', 'Database'],
+          labels: ['Front', 'Back', 'DB'],
           datasets: [
             {
               label: 'My Expertise in app',
               data: [60, 30, 10],
               backgroundColor: ['#0000dd', '#000085', '#000048'],
+              hoverOffset: 4
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              position: 'top',
+            },
+            tooltip: {
+              enabled: true
+            }
+          }
+        }
+      });
+    }
+  }
+
+
+  createChartApps() {
+    const appCanvas = document.getElementById("expertiseChartApps") as HTMLCanvasElement;
+    if (appCanvas) {
+      this.chart = new Chart(appCanvas, {
+        type: 'doughnut',
+        data: {
+          labels: ['Front'],
+          datasets: [
+            {
+              label: 'My Expertise in app',
+              data: [1],
+              backgroundColor: ['#0000dd'],
               hoverOffset: 4
             }
           ]

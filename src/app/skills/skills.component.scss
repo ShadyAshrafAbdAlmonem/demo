@@ -1,13 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
-/* Styles for canvas elements (charts) */
 canvas {
-  width: 100% !important; /* Make the canvas responsive */
-  height: auto !important; /* Auto height to maintain aspect ratio */
-  max-height: 300px; /* Increased max height for charts */
+  width: 100% !important; 
+  height: auto !important; 
+  max-height: 300px; 
 }
 
-/* Container for each chart */
 .chart {
   flex-direction: column;
   text-align: center;
@@ -19,24 +17,21 @@ canvas {
   box-sizing: border-box;
 }
 
-/* Main container for the charts */
 .control-charts {
   display: flex;
   flex-wrap: wrap;
-  max-width: 80%; /* More flexible width for desktop */
+  max-width: 80%; 
   margin: auto;
   justify-content: space-around;
 }
 
-/* Main container for the skills section */
 .skills-container {
   width: 100%;
   margin: auto;
-  overflow-y: auto; /* Enable vertical scrolling */
-  max-height: 100vh; /* Ensure the height doesn't exceed the viewport */
+  overflow-y: auto; 
+  max-height: 100vh; 
 }
 
-/* Styles for the text and headings */
 .illustrate {
   display: flex;
   flex-direction: column;
@@ -57,48 +52,57 @@ p {
   color: white;
 }
 
-/* Responsive styles for mobile screens */
 @media (max-width: 717px) and (min-width: 200px) {
-  @media (max-width: 717px) and (min-width: 200px) {
-    .skills-container {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      margin: auto;
-      overflow-y: auto; /* Enable vertical scrolling */
-      overflow-x: hidden; /* Prevent horizontal scrolling */
-      max-height: 100vh; /* Set the height to the viewport size */
-      padding: 0 10px; /* Padding for mobile view */
-    }
-  
-    .control-charts {
-      flex-direction: column;
-      max-width: 100%; /* Make sure charts take full width on mobile */
-      margin: auto;
-      padding: 0;
-    }
-  
-    .illustrate {
-      margin-bottom: 30px;
-    }
-  
-    h1 {
-      font-size: 2rem; /* Reduce font size for mobile */
-    }
-  
-    p {
-      font-size: 1rem; /* Adjust paragraph font size */
-    }
-  
-    canvas {
-      width: 100% !important; /* Full width on mobile */
-      height: auto !important; /* Keep aspect ratio */
-      max-height: 250px; /* Increased height on mobile */
-      margin: auto;
-    }
-  
-    .chart {
-      margin: 5px 0; /* Adjust margins for mobile */
-    }
+  .skills-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    overflow-y: auto; /* Ensure vertical scrolling works */
+    max-height: 100vh; /* Viewport height */
+    padding: 0 10px;
+  }
+
+  .control-charts {
+    max-width: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+  }
+
+  .illustrate {
+    margin-bottom: 30px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .chart {
+    margin: 5px 0;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    width: 100%; /* Full width */
+    box-sizing: border-box;
+  }
+
+  canvas {
+    width: 100% !important;
+    height: 200px !important;
+  }
+
+
 }
+
+
+@media (max-width: 1981px) and (min-width: 1275px) {
+  .charta {
+    display: none !important;
+  }
 }

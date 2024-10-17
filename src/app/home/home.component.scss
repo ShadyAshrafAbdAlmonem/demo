@@ -18,13 +18,12 @@
   font-size: 40px;
 }
 
-/* Styling for Text */
 h1,
 h2 {
-  white-space: nowrap; /* Prevent line break in typing */
-  border-right: 3px solid #ff5722; /* Add cursor at the end */
-  width: 0; /* Start width from 0 for typing effect */
-  animation: typing 2s steps(2, end), blink-caret 1s step-end infinite; /* Typing effect */
+  white-space: nowrap; 
+  border-right: 3px solid #ff5722; 
+  width: 0; 
+  animation: typing 2s steps(2, end), blink-caret 1s step-end infinite; 
 }
 
 h4 {
@@ -40,9 +39,8 @@ p {
   font-weight: bold;
 }
 
-/* Strong Text Styling (Portfolio Style) */
 strong {
-  color: #2600ff; /* Modify this to match your portfolio style */
+  color: #2600ff; 
   font-style: italic;
   transition: border 1s , color 1s , box-shadow 1s;
 }
@@ -53,15 +51,13 @@ strong:hover {
   box-shadow: 10px 10px 18px #0400ffd9;
 }
 
-/* Image Styling */
 img {
   width: 500px;
   height: 500px;
-  border-radius: 50%; /* Circular image */
-  box-shadow: 20px 30px 38px #0400ffd9; /* Ensures the image fills the circle */
+  border-radius: 50%; 
+  box-shadow: 20px 30px 38px #0400ffd9; 
 }
 
-/* Animation for the image to appear slowly */
 .fade-in-image {
   opacity: 0;
   animation: fadeIn 3s forwards;
@@ -71,7 +67,6 @@ button {
   margin-top: 20px;
 }
 
-/* Typing Animation */
 @keyframes typing {
   from {
     width: 0;
@@ -81,7 +76,6 @@ button {
   }
 }
 
-/* Cursor Blink Animation */
 @keyframes blink-caret {
   from,
   to {
@@ -92,7 +86,6 @@ button {
   }
 }
 
-/* Fade In Animation for Image */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -106,25 +99,25 @@ button {
 
 
 .download-btn {
-    background-color: rgb(47, 0, 255); /* Solid light blue background */
-    color: white; /* White text color */
-    border: none; /* No border */
-    padding: 10px 20px; /* Padding for spacing */
-    border-radius: 5px; /* Rounded corners */
-    font-size: 16px; /* Font size */
-    cursor: pointer; /* Pointer cursor on hover */
-    box-shadow: 0 0 15px rgba(4, 0, 255, 0.7); /* Light blue glow */
-    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+    background-color: rgb(47, 0, 255); 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    box-shadow: 0 0 15px rgba(4, 0, 255, 0.7); 
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
 .download-btn:hover {
-    background-color: rgba(55, 0, 255, 0.9); /* Slightly darker blue on hover */
-    transform: scale(1.05); /* Slightly enlarge the button on hover */
-    box-shadow: 0 0 25px rgb(25, 0, 255); /* Brighten glow on hover */
+    background-color: rgba(55, 0, 255, 0.9); 
+    transform: scale(1.05); 
+    box-shadow: 0 0 25px rgb(25, 0, 255); 
 }
 
 .download-btn:focus {
-    outline: none; /* Remove outline on focus */
+    outline: none; 
 }
 
 
@@ -132,20 +125,18 @@ button {
 @media (max-width: 717px) and (min-width: 200px) {
 
   .container {
-    flex-direction: column; /* Stack content vertically */
-    align-items: center; /* Center content on small screens */
-    padding: 20px; /* Reduce padding to fit the content on smaller screens */
-    text-align: center; /* Center-align text */
-    overflow-y: hidden;
-    overflow-x: hidden;
+    flex-direction: column; 
+    align-items: center; 
+    padding: 20px; 
+    text-align: center;
+    overflow-y: scroll;
+    overflow-x: scroll;
   }
 
-  .container {
-    overflow: hidden; /* Prevent scrolling */
-}
+
 
   .typing-text {
-    font-size: 20px; /* Reduce font size for smaller screens */
+    font-size: 20px; 
   }
 
   .center {
@@ -157,36 +148,35 @@ button {
   }
 
   h1, h2 {
-    font-size: 18px; /* Smaller text size for the headings */
-    border-right: 2px solid #ff5722; /* Reduce border size for the typing effect */
-    animation: typing 2s steps(1, end), blink-caret 1s step-end infinite; /* Adjust the typing effect */
+    font-size: 18px; 
+    border-right: 2px solid #ff5722;
+    animation: typing 2s steps(1, end), blink-caret 1s step-end infinite; 
   }
 
   h4 {
-    font-size: 1.2rem; /* Reduce font size */
+    font-size: 1.2rem;
   }
 
   p {
-    font-size: 0.9rem; /* Reduce font size for the paragraph */
+    font-size: 0.9rem; 
     line-height: 1.4;
   }
 
   .profile-image {
-    width: 100% !important;  /* Smaller image size */
-    height: 100% !important;
+    width: 50% !important;  
+    height: 50% !important;
     margin-top: 20px;
-    box-shadow: 10px 15px 20px #0400ffd9; /* Adjust shadow for the smaller image */
-    overflow-y: hidden;
-    overflow-x: hidden;
+    box-shadow: 10px 15px 20px #0400ffd9; 
+
   }
 
   .download-btn {
-    padding: 8px 16px; /* Smaller button padding */
-    font-size: 14px; /* Smaller font size */
+    padding: 8px 16px; 
+    font-size: 14px; 
     margin-top: 15px;
   }
 
-  /* Hide the cursor blinking effect at smaller sizes for better readability */
+  
   h1, h2 {
     border-right: none;
     animation: none;
@@ -195,13 +185,9 @@ button {
   }
 
   strong {
-    font-size: 16px; /* Adjust bold text size */
+    font-size: 16px; 
   }
 
 }
 
-@media (max-width: 717px) {
-  .container {
-      overflow: hidden; /* Disable scrolling */
-  }
-}
+
