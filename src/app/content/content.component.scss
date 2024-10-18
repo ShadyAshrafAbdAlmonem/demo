@@ -39,6 +39,7 @@ i {
     cursor: pointer;
     padding: 20px;
     text-align: center;
+    margin-top: 0px;
 }
 
 .project-card:hover {
@@ -84,27 +85,18 @@ i {
     text-align: left;
 }
 
-@media (max-height: 717px) and (min-height: 200px) {
+@media (max-width: 717px) and (min-width: 200px)  {
     .project-details {
         background-color: #000658;
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(11, 0, 107, 0.1);
         padding: 20px;
-        margin-top: -14px;
+        margin-top: 4px;
     }
 
-    .project-card {
 
-        margin-top: -14px;
-    }
 }
 
-@media (max-width: 768px) {
-    .project-cards {
-        grid-template-columns: 1fr;
-    }
 
-    .project-card {
-        margin-bottom: 20px;
-    }
-}
+
+
