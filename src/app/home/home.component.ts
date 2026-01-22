@@ -31,8 +31,8 @@ export class HomeComponent implements OnInit {
 
   downloadCV() {
     const link = document.createElement('a');
-    link.href = './assets/cv.pdf'; 
-    link.download = 'My_CV_Shady.pdf'; 
+    link.href = './assets/CV.pdf'; 
+    link.download = 'CV.pdf'; 
     link.click();
   }
 
